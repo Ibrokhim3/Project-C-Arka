@@ -27,6 +27,14 @@ $default: #011F3A;
 }  
 
 
+@mixin button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
 *{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -42,6 +50,7 @@ $default: #011F3A;
   position: relative;
   z-index: 1;
   
+  
  
 
 }
@@ -50,6 +59,8 @@ $default: #011F3A;
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
+  
+  
   
   
 
@@ -61,6 +72,8 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
+  
   
   
 }
@@ -68,6 +81,7 @@ nav{
 
 
 .logo {
+ 
 
 
 
@@ -131,6 +145,8 @@ letter-spacing: 1.96px;
 text-transform: uppercase;
 color: #011F3A;
 }
+
+
 .menu_btn {
   background-color: transparent;
   border: 0;
@@ -141,6 +157,7 @@ color: #011F3A;
 .nav_right{
   display: flex;
   align-items: center;
+  
   
  
 
@@ -156,6 +173,7 @@ line-height: 18px;
 letter-spacing: 1.96px;
 text-transform: uppercase;
 color: #011F3A;
+margin-left: 10px;
 }
 .account_btn {
   background-color: transparent;
@@ -485,6 +503,37 @@ color: #FFFFFF;
   
 }
 
+.bars_btn{
+ @include button();
+ display: none;
 
+}
+
+
+
+
+
+@media screen and (max-width: 1000px){
+  .container_a{
+    max-width: 700px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .bars_btn{
+    display: block;
+  }
+
+  .nav_list, .nav_right{
+    display: none;
+  }
+
+}
+
+
+
+
+  
 
 

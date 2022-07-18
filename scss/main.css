@@ -66,6 +66,7 @@ nav {
   letter-spacing: 1.96px;
   text-transform: uppercase;
   color: #011F3A;
+  margin-left: 10px;
 }
 
 .account_btn {
@@ -315,4 +316,26 @@ header {
   letter-spacing: 1.96px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.bars_btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .container_a {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bars_btn {
+    display: block;
+  }
+  .nav_list, .nav_right {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
